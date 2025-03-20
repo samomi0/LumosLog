@@ -28,5 +28,5 @@ void spdlogAdapter(LumosLog::LogLevel level, const std::string& module, const st
 
 void initLumosLog() {
   spdlog::set_level(spdlog::level::trace);
-  LumosLog::setLogger(spdlogAdapter);
+  LumosLog::LumosLog::setLogger(spdlogAdapter);
 }
