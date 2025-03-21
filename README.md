@@ -60,15 +60,7 @@ LumosLog aims to **abstract away logging concerns** from your core modules. By p
 ## How to build
 
 ~~~
-conan install . --build=missing -s build_type=Release -s compiler.cppstd=20 --output-folder=build
-~~~
-
-~~~
-cd build
-
-cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=build/build/Release/generators/conan_toolchain.cmake
-
-make
+conan build . --build=missing
 ~~~
 
 ## example
